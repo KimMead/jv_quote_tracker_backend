@@ -1,0 +1,53 @@
+
+h1 {
+    padding: 20px;
+}
+
+.form-container {
+    padding: 10px;
+  }
+
+  h3 {
+    padding: 20px;
+  }
+
+#new-quote-form {
+    background-color: #a1a1a1;
+    box: 10px 10px rgb(112, 105, 105);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 100px;
+    width: 800px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+select#categories {
+    border-radius: 5px;
+}
+
+input#create-button.submit {
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(250, 49, 206);
+}
+
+#quote-container {
+    background-color: #e0dddd;
+    box: 5px 5px rgb(112, 107, 107);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(250, 49, 206);
+}
+
+.card-body {
+    padding: 15px;
+}
