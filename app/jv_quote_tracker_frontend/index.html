@@ -1,3 +1,4 @@
+<!-- renders the structure of the frontend -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +12,6 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
-    <script type="text/javascript" src="src/index.js"></script>
-    <script type="text/javascript" src="src/quote.js"></script>
-    
     
 </head>
 <body>
@@ -30,16 +27,19 @@
             <select id="categories" name="categories">
                 <option value="1">Motivational</option>
                 <option value="2">Funny</option>
-                <option value="3">Friend</option>
+                <option value="3">From A Friend</option>
             </select>
             <br><br>
             <input id= 'create-button' type="submit" value="Create Quote" class="submit">
+            
             </form>
             <br><br>
             <h3>Your Quotes</h3>
-            <div id="quote-container">
-            </div>
+            <div id="quote-container"></div>
+            <div id="update-quote"></div>
     </div>
+    <script type="text/javascript" src="src/index.js"></script>
+    <script type="text/javascript" src="src/quote.js"></script>
     
 </body>
 </html>

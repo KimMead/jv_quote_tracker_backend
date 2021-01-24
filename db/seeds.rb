@@ -11,6 +11,6 @@ Quote.destroy_all
 
 motivational = Category.create(name: "Motivational")
 funny = Category.create(name: "Funny")
-friend = Category.create(name: "Friend")
+friend = Category.create(name: "From A Friend")
 
 Quote.create(content: "Hello!", category_id: motivational.id)

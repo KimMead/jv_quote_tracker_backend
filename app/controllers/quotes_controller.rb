@@ -1,5 +1,5 @@
 class QuotesController < ApplicationController
-    before_action :find_quote, only: [:update]
+    # before_action :find_quote, only: [:update]
     
     def index
         quotes = Quote.all
@@ -15,14 +15,14 @@ class QuotesController < ApplicationController
         end 
     end 
 
-    # def update 
-    #     quote.update(quote_params)
-    #     if quote.save 
-    #         render json: quote, status: 200
-    #     else 
-    #         render json: {errors: quote.errors.full_messages}
-    #     end 
-    # end 
+    def update 
+        quote.update(quote_params)
+        if quote.save 
+            render json: quote, status: 200
+        else 
+            render json: {errors: quote.errors.full_messages}
+        end 
+    end 
 
     def destroy
         quote = Quote.find(params[:id])
